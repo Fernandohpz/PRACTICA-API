@@ -42,7 +42,7 @@
   </div>
 </div>
 
-<!-- ✏️ Modal editar usuario -->
+<!--  Modal editar usuario -->
 <div class="modal fade" id="modalEditar" tabindex="-1">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -108,7 +108,7 @@ async function cargarUsuarios() {
   }
 }
 
-// 🔍 Buscar usuario por ID
+// Buscar usuario por ID
 document.getElementById('btnBuscar').addEventListener('click', async () => {
   const id = document.getElementById('buscarId').value.trim();
   if (!id) return notyf.error('Ingresa un ID');
@@ -143,7 +143,7 @@ document.getElementById('btnBuscar').addEventListener('click', async () => {
 // Recargar lista completa
 document.getElementById('btnRecargar').addEventListener('click', cargarUsuarios);
 
-// ✏️ Abrir modal de edición con datos del usuario
+// Abrir modal de edición con datos del usuario
 async function editarUsuario(id) {
   try {
     const res = await fetch(`${API_URL}get.php?id=${id}`);
@@ -207,9 +207,10 @@ async function eliminarUsuario(id) {
   }
 }
 
-// 🚀 Inicialización
+// Inicialización
 cargarUsuarios();
 </script>
 
 </body>
 </html>
+
